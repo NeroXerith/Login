@@ -4,14 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
+  <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
+  <!-- Pop-up error modal -->
+  <div id="error-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" id="close-error-modal">&times;</span>
+      <h1 class="modal-title">Error</h1>
+      <p class="modal-message" id="error-message">Error Message</p>
+    </div>
+  </div>
 
   <h1>Login</h1>
 
   <form id="login-form">
-    <input type="text" name="username" placeholder="Username">
-    <input type="password" name="password" placeholder="Password">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
     <input type="submit" value="Login">
   </form>
   
